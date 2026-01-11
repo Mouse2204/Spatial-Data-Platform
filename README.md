@@ -60,7 +60,7 @@ docker-compose up -d
 ```bash
 python3 -m venv venv
 source venv/bin/activate
-pip install pyspark apache-sedona kafka-python delta-spark
+pip install requirements.txt
 
 ```
 
