@@ -65,19 +65,19 @@ pip install pyspark apache-sedona kafka-python delta-spark
 ```
 
 2. Đảm bảo các file JAR cần thiết (`sedona`, `delta`, `hadoop-aws`) đã nằm trong thư mục `deps/`.
-# 1. Apache Sedona (Core & SQL)
+2.1. Apache Sedona (Core & SQL)
 wget -P deps/ https://repo1.maven.org/maven2/org/apache/sedona/sedona-spark-shaded-3.5_2.12/1.5.1/sedona-spark-shaded-3.5_2.12-1.5.1.jar
 wget -P deps/ https://repo1.maven.org/maven2/org/apache/sedona/sedona-viz-3.5_2.12/1.5.1/sedona-viz-3.5_2.12-1.5.1.jar
 
-# 2. Delta Lake
+2.2. Delta Lake
 wget -P deps/ https://repo1.maven.org/maven2/io/delta/delta-spark_2.12/3.0.0/delta-spark_2.12-3.0.0.jar
 wget -P deps/ https://repo1.maven.org/maven2/io/delta/delta-storage/3.0.0/delta-storage-3.0.0.jar
 
-# 3. Kết nối S3 (Hadoop AWS & AWS SDK)
+2.3. Kết nối S3 (Hadoop AWS & AWS SDK)
 wget -P deps/ https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.4/hadoop-aws-3.3.4.jar
 wget -P deps/ https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.262/aws-java-sdk-bundle-1.12.262.jar
 
-# 4. Kafka Connector (Dành cho Spark Streaming)
+2.4. Kafka Connector (Dành cho Spark Streaming)
 wget -P deps/ https://repo1.maven.org/maven2/org/apache/spark/spark-sql-kafka-0-10_2.12/3.5.0/spark-sql-kafka-0-10_2.12-3.5.0.jar
 wget -P deps/ https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/3.5.0/kafka-clients-3.5.0.jar
 wget -P deps/ https://repo1.maven.org/maven2/org/apache/spark/spark-token-provider-kafka-0-10_2.12/3.5.0/spark-token-provider-kafka-0-10_2.12-3.5.0.jar
