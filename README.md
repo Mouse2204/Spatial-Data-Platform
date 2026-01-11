@@ -142,6 +142,6 @@ SELECT vehicle_id, geometry, event_timestamp FROM vehicle_locations
 ## 4. Lưu ý kỹ thuật
 
 * **Schema Evolution:** Hệ thống tự động gộp Schema khi có sự thay đổi kiểu dữ liệu nhờ tính năng `mergeSchema`.
-* **Hiệu năng:** Trigger được đặt ở mức `5 seconds` để cân bằng giữa độ trễ và áp lực ghi lên hệ thống lưu trữ.
+* **Hiệu năng:** Trigger được đặt ở mức `15 seconds` để cân bằng giữa độ trễ và áp lực ghi lên hệ thống lưu trữ.
 * **Spatial Format:** Dữ liệu được lưu ở dạng WKT String để tương thích tối đa với Trino và Grafana khi không có plugin spatial chuyên dụng.
 
