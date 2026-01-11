@@ -65,6 +65,7 @@ pip install pyspark apache-sedona kafka-python delta-spark
 ```
 
 2. Đảm bảo các file JAR cần thiết (`sedona`, `delta`, `hadoop-aws`) đã nằm trong thư mục `deps/`.
+
 2.1. Apache Sedona (Core & SQL)
 wget -P deps/ https://repo1.maven.org/maven2/org/apache/sedona/sedona-spark-shaded-3.5_2.12/1.5.1/sedona-spark-shaded-3.5_2.12-1.5.1.jar
 wget -P deps/ https://repo1.maven.org/maven2/org/apache/sedona/sedona-viz-3.5_2.12/1.5.1/sedona-viz-3.5_2.12-1.5.1.jar
