@@ -1,0 +1,38 @@
+# --- Python ---
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# --- Java/Spark (JARs) ---
+# Loại bỏ tất cả các file .jar vì chúng rất nặng và nên được quản lý riêng
+*.jar
+# Nếu bạn muốn giữ lại các JAR quan trọng trong thư mục deps, 
+# hãy bỏ comment dòng dưới đây:
+# !deps/*.jar
+
+# --- IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Project Specific (Data & Logs) ---
+# Không đẩy dữ liệu checkpoint hoặc log cục bộ lên Git
+checkpoints/
+logs/
+spark-warehouse/
+metastore_db/
+derby.log
+.ipynb_checkpoints/
+
+# --- Environment/Secret ---
+# Tránh lộ các thông tin access key của MinIO/Kafka
+.env

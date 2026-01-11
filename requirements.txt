@@ -1,0 +1,6 @@
+minio
+confluent-kafka
+apache-sedona==1.5.1
+pyspark==3.5.0
+shapely
+pandas
