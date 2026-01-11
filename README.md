@@ -7,7 +7,7 @@ Hệ thống **Data-Geo** là một Pipeline xử lý dữ liệu không gian th
 ### Công nghệ sử dụng:
 
 * **Dữ liệu đầu vào:** Python Producer (Kafka).
-* **Hàng đợi thông điệp:** Kafka & Zookeeper.
+* **Hàng đợi thông điệp:** Kafka-KRaft.
 * **Xử lý dữ liệu:** Apache Spark & **Apache Sedona** (Spatial Functions).
 * **Định dạng lưu trữ:** Delta Lake (với khả năng ACID & Schema Evolution).
 * **Lưu trữ đối tượng:** MinIO (Tương thích S3).
