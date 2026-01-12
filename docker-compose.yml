@@ -38,6 +38,8 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: 'INTERNAL'
       KAFKA_CLUSTER_ID: 'becadata-spatial-id-001'
     networks: [becadata_network]
+    volumes:
+      - kafka_data_1:/var/lib/kafka/data
 
   broker-2:
     image: apache/kafka:latest
@@ -55,6 +57,8 @@ services:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,INTERNAL:PLAINTEXT'
       KAFKA_INTER_BROKER_LISTENER_NAME: 'INTERNAL'
     networks: [becadata_network]
+    volumes:
+      - kafka_data_2:/var/lib/kafka/data
 
   broker-3:
     image: apache/kafka:latest
@@ -72,6 +76,8 @@ services:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: 'CONTROLLER:PLAINTEXT,PLAINTEXT:PLAINTEXT,INTERNAL:PLAINTEXT'
       KAFKA_INTER_BROKER_LISTENER_NAME: 'INTERNAL'
     networks: [becadata_network]
+    volumes:
+      - kafka_data_3:/var/lib/kafka/data
 
   spark-master:
     build:
@@ -131,3 +137,6 @@ networks:
 
 volumes:
   minio_data:
+  kafka_data_1:
+  kafka_data_2:
+  kafka_data_3:
